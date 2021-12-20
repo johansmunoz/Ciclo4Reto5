@@ -33,7 +33,7 @@ public class Fragment_Productos extends Fragment {
 
     View v;
     ListView listaProductos;
-    Adaptador_Productos adaptador_productos;
+    //Adaptador_Productos adaptador_productos;
     TextView prueba, titulo, descripcion1, link;
     Conversor_imagen imagen;
     //int [] imagen;
@@ -49,7 +49,7 @@ public class Fragment_Productos extends Fragment {
         Adaptador_Productos adaptador_productos = new Adaptador_Productos(GetItemLista(), getContext());
 
         //final ArrayAdapter adapter = new ArrayAdapter<String>(getContext(), R.layout.fragment__productos);
-        //listaProductos.setAdapter(adapter);//adaptador_productos
+        listaProductos.setAdapter(adaptador_productos);
         prueba = (TextView) v.findViewById(R.id.prueba);
         descripcion1=(TextView) v.findViewById(R.id.descripcion);
         link =(TextView) v.findViewById(R.id.url2);
@@ -86,7 +86,7 @@ public class Fragment_Productos extends Fragment {
 
                                 prueba.append(name +'\n');
                                 descripcion1.append(descripcion+'\n');
-                                link.append(url+'\n');
+                                //link.append(url+'\n');
 
 
                             }
@@ -102,6 +102,11 @@ public class Fragment_Productos extends Fragment {
             }
         });
         requestQueue.add(jsonObjectRequest);
+
+        listaProductos2.add(new Entidad_Productos(R.drawable.pinata1, "Whats App", "W App"));
+        listaProductos2.add(new Entidad_Productos(R.drawable.pinata2, "Batman", "Batman"));
+        listaProductos2.add(new Entidad_Productos(R.drawable.pinata3, "Capitan América", "C América"));
+        listaProductos2.add(new Entidad_Productos(R.drawable.pinata4, "Jurassic Park", "J Park"));
 
         return listaProductos2;
     }

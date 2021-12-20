@@ -1,4 +1,4 @@
-package usa.sesion3.tiendafestejosv5.Vista;
+/**package usa.sesion3.tiendafestejosv5.Vista;
 
 import android.database.Cursor;
 import android.os.Bundle;
@@ -47,4 +47,4 @@ public class ListaServicios extends AppCompatActivity {
         gridView.setAdapter(serviciosAdapter);
 
     }
-}
+}*/

@@ -1,4 +1,4 @@
-package usa.sesion3.tiendafestejosv5.Vista;
+/** package usa.sesion3.tiendafestejosv5.Vista;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -62,7 +62,7 @@ public class AdmServicios extends AppCompatActivity {
      * la imagen para tener
      * @param imageView
      * @return
-     */
+
     public byte[] imageViewToByte(ImageView imageView){
         Bitmap bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -117,7 +117,7 @@ public class AdmServicios extends AppCompatActivity {
         /**
          * llamado desde AdmServicios a ListaServicios para ver todos lso servicios registrados
          * @param v
-         */
+         *
         btnListaPersonajes.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -128,7 +128,7 @@ public class AdmServicios extends AppCompatActivity {
         });
         /**
          * boton para seleccionar imagen desde galería del servicio a incluir
-         */
+         *
         btnChoose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -141,7 +141,7 @@ public class AdmServicios extends AppCompatActivity {
         });
         /**
          * Funcion para insertar nuevos servicios cuando se hace click en el boton agregar
-         */
+         *
         btnInsertar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -158,7 +158,7 @@ public class AdmServicios extends AppCompatActivity {
         });
         /**
          * botón para consultar un servicio especificando el id
-         */
+         *
         btnConsultar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -182,7 +182,7 @@ public class AdmServicios extends AppCompatActivity {
         });
         /**
          * funcion para eliminar servicio seleccionado
-         */
+         *
         btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -211,7 +211,7 @@ public class AdmServicios extends AppCompatActivity {
      * @param requestCode
      * @param permissions
      * @param grantResults
-     */
+     *
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -297,4 +297,4 @@ public class AdmServicios extends AppCompatActivity {
         });
         snackbar.show();
     }
-}
+}*/

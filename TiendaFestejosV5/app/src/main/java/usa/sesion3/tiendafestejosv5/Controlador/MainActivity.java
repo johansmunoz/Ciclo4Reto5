@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 
-import usa.sesion3.tiendafestejosv5.Configuracion;
+//import usa.sesion3.tiendafestejosv5.Configuracion;
 import usa.sesion3.tiendafestejosv5.Vista.Conversor_imagen;
 import usa.sesion3.tiendafestejosv5.Vista.Fragment_Favoritos;
 import usa.sesion3.tiendafestejosv5.Vista.Fragment_Inicio;
@@ -24,8 +24,8 @@ import usa.sesion3.tiendafestejosv5.Vista.Fragment_Productos;
 import usa.sesion3.tiendafestejosv5.Vista.Fragment_Servicios;
 import usa.sesion3.tiendafestejosv5.Vista.Fragment_sucursales;
 import usa.sesion3.tiendafestejosv5.R;
-import usa.sesion3.tiendafestejosv5.Tu_Perfil;
-import usa.sesion3.tiendafestejosv5.Vista.ListaServicios;
+//import usa.sesion3.tiendafestejosv5.Tu_Perfil;
+//import usa.sesion3.tiendafestejosv5.Vista.ListaServicios;
 
 /**
  * Definicion de la clase principal desde la cual se iniciara toda la aplicacion
@@ -87,11 +87,11 @@ public class MainActivity extends AppCompatActivity {
              */
             @Override
             public void onClick(View v) {
-                /**intercambio=getSupportFragmentManager().beginTransaction();
-                intercambio.replace(R.id.contenedor_fragments, subpantalla3).commit();*/
+                intercambio=getSupportFragmentManager().beginTransaction();
+                intercambio.replace(R.id.contenedor_fragments, subpantalla3).commit();
 
-                Intent intent = new Intent(getApplicationContext(), ListaServicios.class);
-                startActivity(intent);
+                /**Intent intent = new Intent(getApplicationContext(), ListaServicios.class);
+                startActivity(intent);*/
 
             }
         });
@@ -134,19 +134,19 @@ public class MainActivity extends AppCompatActivity {
                 intercambio=getSupportFragmentManager().beginTransaction();
                 intercambio.replace(R.id.contenedor_fragments, subpantalla2).commit();
                 break;
-            case R.id.servicios:
+            /**case R.id.servicios:
                 Toast.makeText(this, "Aquí podrán verse todos los servicios de la tienda",
                         Toast.LENGTH_SHORT).show();
                Intent pantaservi2 = new Intent(getApplicationContext(), ListaServicios.class);
                startActivity(pantaservi2);
-                break;
+                break;*/
             case R.id.sucursales:
                 Toast.makeText(this, "Aquí podrán verse todas las sucursales de la tienda",
                         Toast.LENGTH_SHORT).show();
                 intercambio=getSupportFragmentManager().beginTransaction();
                 intercambio.replace(R.id.contenedor_fragments, subpantalla4).commit();
                 break;
-            case R.id.configuracion:
+            /**case R.id.configuracion:
                 Toast.makeText(this, "Aquí podrán verse y cambiar las configuraciones de la " +
                                 "aplicacion",
                         Toast.LENGTH_SHORT).show();
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 Intent pantaPerfil = new Intent(getApplicationContext(), Tu_Perfil.class);
                 startActivity(pantaPerfil);
-                break;
+                break;*/
             case R.id.servicios2:
                 Intent pantaServi2 = new Intent(getApplicationContext(), Fragment_Servicios.class);
                 startActivity(pantaServi2);

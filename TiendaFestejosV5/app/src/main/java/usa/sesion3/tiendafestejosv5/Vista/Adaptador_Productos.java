@@ -33,8 +33,7 @@ public class Adaptador_Productos extends BaseAdapter implements View.OnClickList
     }
 
     @Override
-    public Object getItem(int posicion) {
-        return itemLista.get(posicion);//devuelve el item en donde vamos a trabajar (posiciones: 0,1,2,n)
+    public Object getItem(int posicion) { return itemLista.get(posicion);//devuelve el item en donde vamos a trabajar (posiciones: 0,1,2,n)
     }
 
     @Override
@@ -77,7 +76,8 @@ public class Adaptador_Productos extends BaseAdapter implements View.OnClickList
         //imagen.setImageResource(datosItem.getImagen_productos1());
         titulo.setText(datosItem.getTitulo());
         descripcion.setText(datosItem.getDescripcion());
-        url.setText(datosItem.getUrl());
+        //url.setText(datosItem.getUrl());
+        imagen.setImageResource(datosItem.getImagen_productos1());
 
 
         /**
@@ -99,5 +99,6 @@ public class Adaptador_Productos extends BaseAdapter implements View.OnClickList
     @Override
     public void onClick(View v) {
 
-        Toast.makeText(context, "Item: Producto agregado al carrito", Toast.LENGTH_LONG).show();    }
+        Toast.makeText(context, "Item: Producto agregado al carrito", Toast.LENGTH_LONG).show();
+    }
 }

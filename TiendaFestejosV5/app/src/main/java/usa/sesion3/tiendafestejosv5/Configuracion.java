@@ -1,4 +1,4 @@
-package usa.sesion3.tiendafestejosv5;
+/**package usa.sesion3.tiendafestejosv5;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,3 +33,4 @@ public class Configuracion extends AppCompatActivity {
 
 
 }
+*/

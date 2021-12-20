@@ -1,4 +1,4 @@
-package usa.sesion3.tiendafestejosv5;
+/**package usa.sesion3.tiendafestejosv5;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import usa.sesion3.tiendafestejosv5.Vista.AdmServicios;
+//import usa.sesion3.tiendafestejosv5.Vista.AdmServicios;
 
 public class Tu_Perfil extends AppCompatActivity {
 
@@ -40,4 +40,4 @@ public class Tu_Perfil extends AppCompatActivity {
             }
         });
     }
-}
+}*/
